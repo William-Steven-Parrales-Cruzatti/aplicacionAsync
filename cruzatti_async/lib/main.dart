@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({super.key});1
 
   // This widget is the root of your application.
   @override
@@ -121,9 +121,9 @@ class _PracticaAsyncState extends State<PracticaAsync> {
                 onPressed: () async {
                   setState(() {
                     medio_bar_with = 300;
-                    medio_time = 1;
+                    medio_time = 3;
                   });
-                  medio = await MockApi().getFerrariInteger();
+                  medio = await MockApi().getHyundaiInteger();
                   setState(() {
                     medio_text = medio;
                     medio_time = 0;
@@ -164,9 +164,9 @@ class _PracticaAsyncState extends State<PracticaAsync> {
                 onPressed: () async {
                   setState(() {
                     lento_bar_with = 300;
-                    lento_time = 1;
+                    lento_time = 10;
                   });
-                  lento = await MockApi().getFerrariInteger();
+                  lento = await MockApi().getFisherPriceInteger();
                   setState(() {
                     lento_text = lento;
                     lento_time = 0;
